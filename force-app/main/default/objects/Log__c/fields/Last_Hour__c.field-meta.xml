@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Hour__c</fullName>
+    <description>Is CreatedDate withing Last Hour?</description>
+    <formula>NOW() - CreatedDate &lt;= (1/24)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Hour</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
